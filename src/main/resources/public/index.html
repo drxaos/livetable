@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Table</title>
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+</head>
+<body>
+
+<div id="hot"></div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/handsontable@7.0.0/dist/handsontable.full.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/handsontable@7.0.0/dist/handsontable.full.min.css" rel="stylesheet" media="screen">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+
+<script src="js/messaging.js"></script>
+<script src="js/table.js"></script>
+
+<script>
+    var place = "album:1";
+    var secret = "secrettoken";
+    connect();
+</script>
+
+</body>
+</html>

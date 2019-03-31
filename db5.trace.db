@@ -1,0 +1,278 @@
+2019-03-31 15:43:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "IS_GENERATEDCOLUMN" not found [42122-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3154)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3246)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:314)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCResultSetImpl.getString(JDBCResultSetImpl.java:469)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCUtils.safeGetStringTrimmed(JDBCUtils.java:72)
+	at org.jkiss.dbeaver.ext.generic.model.GenericUtils.safeGetStringTrimmed(GenericUtils.java:70)
+	at org.jkiss.dbeaver.ext.generic.model.TableCache.fetchChild(TableCache.java:157)
+	at org.jkiss.dbeaver.ext.generic.model.TableCache.fetchChild(TableCache.java:1)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCStructCache.loadChildren(JDBCStructCache.java:128)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCStructCache.getChildren(JDBCStructCache.java:220)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getAttributes(GenericTable.java:149)
+	at org.jkiss.dbeaver.model.impl.sql.edit.struct.SQLTableManager.getTableDDL(SQLTableManager.java:160)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCUtils.generateTableDDL(JDBCUtils.java:780)
+	at org.jkiss.dbeaver.ext.generic.model.meta.GenericMetaModel.getTableDDL(GenericMetaModel.java:219)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getObjectDefinitionText(GenericTable.java:288)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLSourceViewer.getSourceText(SQLSourceViewer.java:53)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditorNested$ObjectDocumentProvider$1.run(SQLEditorNested.java:230)
+	at org.jkiss.dbeaver.runtime.TasksJob.run(TasksJob.java:60)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:95)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+2019-03-31 15:43:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "IS_GENERATEDCOLUMN" not found [42122-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3154)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3246)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:314)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCResultSetImpl.getString(JDBCResultSetImpl.java:469)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCUtils.safeGetStringTrimmed(JDBCUtils.java:72)
+	at org.jkiss.dbeaver.ext.generic.model.GenericUtils.safeGetStringTrimmed(GenericUtils.java:70)
+	at org.jkiss.dbeaver.ext.generic.model.TableCache.fetchChild(TableCache.java:157)
+	at org.jkiss.dbeaver.ext.generic.model.TableCache.fetchChild(TableCache.java:1)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCStructCache.loadChildren(JDBCStructCache.java:128)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCStructCache.getChildren(JDBCStructCache.java:220)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getAttributes(GenericTable.java:149)
+	at org.jkiss.dbeaver.model.impl.sql.edit.struct.SQLTableManager.getTableDDL(SQLTableManager.java:160)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCUtils.generateTableDDL(JDBCUtils.java:780)
+	at org.jkiss.dbeaver.ext.generic.model.meta.GenericMetaModel.getTableDDL(GenericMetaModel.java:219)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getObjectDefinitionText(GenericTable.java:288)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLSourceViewer.getSourceText(SQLSourceViewer.java:53)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditorNested$ObjectDocumentProvider$1.run(SQLEditorNested.java:230)
+	at org.jkiss.dbeaver.runtime.TasksJob.run(TasksJob.java:60)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:95)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+2019-03-31 15:43:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "IS_GENERATEDCOLUMN" not found [42122-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3154)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3246)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:314)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCResultSetImpl.getString(JDBCResultSetImpl.java:469)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCUtils.safeGetStringTrimmed(JDBCUtils.java:72)
+	at org.jkiss.dbeaver.ext.generic.model.GenericUtils.safeGetStringTrimmed(GenericUtils.java:70)
+	at org.jkiss.dbeaver.ext.generic.model.TableCache.fetchChild(TableCache.java:157)
+	at org.jkiss.dbeaver.ext.generic.model.TableCache.fetchChild(TableCache.java:1)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCStructCache.loadChildren(JDBCStructCache.java:128)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCStructCache.getChildren(JDBCStructCache.java:220)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getAttributes(GenericTable.java:149)
+	at org.jkiss.dbeaver.model.impl.sql.edit.struct.SQLTableManager.getTableDDL(SQLTableManager.java:160)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCUtils.generateTableDDL(JDBCUtils.java:780)
+	at org.jkiss.dbeaver.ext.generic.model.meta.GenericMetaModel.getTableDDL(GenericMetaModel.java:219)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getObjectDefinitionText(GenericTable.java:288)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLSourceViewer.getSourceText(SQLSourceViewer.java:53)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditorNested$ObjectDocumentProvider$1.run(SQLEditorNested.java:230)
+	at org.jkiss.dbeaver.runtime.TasksJob.run(TasksJob.java:60)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:95)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+2019-03-31 15:43:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "IS_GENERATEDCOLUMN" not found [42122-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3154)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3246)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:314)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCResultSetImpl.getString(JDBCResultSetImpl.java:469)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCUtils.safeGetStringTrimmed(JDBCUtils.java:72)
+	at org.jkiss.dbeaver.ext.generic.model.GenericUtils.safeGetStringTrimmed(GenericUtils.java:70)
+	at org.jkiss.dbeaver.ext.generic.model.TableCache.fetchChild(TableCache.java:157)
+	at org.jkiss.dbeaver.ext.generic.model.TableCache.fetchChild(TableCache.java:1)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCStructCache.loadChildren(JDBCStructCache.java:128)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCStructCache.getChildren(JDBCStructCache.java:220)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getAttributes(GenericTable.java:149)
+	at org.jkiss.dbeaver.model.impl.sql.edit.struct.SQLTableManager.getTableDDL(SQLTableManager.java:160)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCUtils.generateTableDDL(JDBCUtils.java:780)
+	at org.jkiss.dbeaver.ext.generic.model.meta.GenericMetaModel.getTableDDL(GenericMetaModel.java:219)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getObjectDefinitionText(GenericTable.java:288)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLSourceViewer.getSourceText(SQLSourceViewer.java:53)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditorNested$ObjectDocumentProvider$1.run(SQLEditorNested.java:230)
+	at org.jkiss.dbeaver.runtime.TasksJob.run(TasksJob.java:60)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:95)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+2019-03-31 15:43:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "IS_GENERATEDCOLUMN" not found [42122-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3154)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3246)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:314)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCResultSetImpl.getString(JDBCResultSetImpl.java:469)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCUtils.safeGetStringTrimmed(JDBCUtils.java:72)
+	at org.jkiss.dbeaver.ext.generic.model.GenericUtils.safeGetStringTrimmed(GenericUtils.java:70)
+	at org.jkiss.dbeaver.ext.generic.model.TableCache.fetchChild(TableCache.java:157)
+	at org.jkiss.dbeaver.ext.generic.model.TableCache.fetchChild(TableCache.java:1)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCStructCache.loadChildren(JDBCStructCache.java:128)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCStructCache.getChildren(JDBCStructCache.java:220)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getAttributes(GenericTable.java:149)
+	at org.jkiss.dbeaver.model.impl.sql.edit.struct.SQLTableManager.getTableDDL(SQLTableManager.java:160)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCUtils.generateTableDDL(JDBCUtils.java:780)
+	at org.jkiss.dbeaver.ext.generic.model.meta.GenericMetaModel.getTableDDL(GenericMetaModel.java:219)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getObjectDefinitionText(GenericTable.java:288)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLSourceViewer.getSourceText(SQLSourceViewer.java:53)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditorNested$ObjectDocumentProvider$1.run(SQLEditorNested.java:230)
+	at org.jkiss.dbeaver.runtime.TasksJob.run(TasksJob.java:60)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:95)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+2019-03-31 15:43:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "IS_GENERATEDCOLUMN" not found [42122-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3154)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3246)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:314)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCResultSetImpl.getString(JDBCResultSetImpl.java:469)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCUtils.safeGetStringTrimmed(JDBCUtils.java:72)
+	at org.jkiss.dbeaver.ext.generic.model.GenericUtils.safeGetStringTrimmed(GenericUtils.java:70)
+	at org.jkiss.dbeaver.ext.generic.model.TableCache.fetchChild(TableCache.java:157)
+	at org.jkiss.dbeaver.ext.generic.model.TableCache.fetchChild(TableCache.java:1)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCStructCache.loadChildren(JDBCStructCache.java:128)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCStructCache.getChildren(JDBCStructCache.java:220)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getAttributes(GenericTable.java:149)
+	at org.jkiss.dbeaver.model.impl.sql.edit.struct.SQLTableManager.getTableDDL(SQLTableManager.java:160)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCUtils.generateTableDDL(JDBCUtils.java:780)
+	at org.jkiss.dbeaver.ext.generic.model.meta.GenericMetaModel.getTableDDL(GenericMetaModel.java:219)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getObjectDefinitionText(GenericTable.java:288)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLSourceViewer.getSourceText(SQLSourceViewer.java:53)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditorNested$ObjectDocumentProvider$1.run(SQLEditorNested.java:230)
+	at org.jkiss.dbeaver.runtime.TasksJob.run(TasksJob.java:60)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:95)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+2019-03-31 15:43:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "IS_GENERATEDCOLUMN" not found [42122-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3154)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3246)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:314)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCResultSetImpl.getString(JDBCResultSetImpl.java:469)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCUtils.safeGetStringTrimmed(JDBCUtils.java:72)
+	at org.jkiss.dbeaver.ext.generic.model.GenericUtils.safeGetStringTrimmed(GenericUtils.java:70)
+	at org.jkiss.dbeaver.ext.generic.model.TableCache.fetchChild(TableCache.java:157)
+	at org.jkiss.dbeaver.ext.generic.model.TableCache.fetchChild(TableCache.java:1)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCStructCache.loadChildren(JDBCStructCache.java:128)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCStructCache.getChildren(JDBCStructCache.java:220)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getAttributes(GenericTable.java:149)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getConstraints(GenericTable.java:173)
+	at org.jkiss.dbeaver.ext.generic.model.ForeignKeysCache.fetchObject(ForeignKeysCache.java:126)
+	at org.jkiss.dbeaver.ext.generic.model.ForeignKeysCache.fetchObject(ForeignKeysCache.java:1)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCCompositeCache.loadObjects(JDBCCompositeCache.java:312)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCCompositeCache.getObjects(JDBCCompositeCache.java:112)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getAssociations(GenericTable.java:193)
+	at org.jkiss.dbeaver.model.impl.sql.edit.struct.SQLTableManager.getTableDDL(SQLTableManager.java:182)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCUtils.generateTableDDL(JDBCUtils.java:780)
+	at org.jkiss.dbeaver.ext.generic.model.meta.GenericMetaModel.getTableDDL(GenericMetaModel.java:219)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getObjectDefinitionText(GenericTable.java:288)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLSourceViewer.getSourceText(SQLSourceViewer.java:53)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditorNested$ObjectDocumentProvider$1.run(SQLEditorNested.java:230)
+	at org.jkiss.dbeaver.runtime.TasksJob.run(TasksJob.java:60)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:95)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+2019-03-31 15:43:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "IS_GENERATEDCOLUMN" not found [42122-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3154)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3246)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:314)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCResultSetImpl.getString(JDBCResultSetImpl.java:469)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCUtils.safeGetStringTrimmed(JDBCUtils.java:72)
+	at org.jkiss.dbeaver.ext.generic.model.GenericUtils.safeGetStringTrimmed(GenericUtils.java:70)
+	at org.jkiss.dbeaver.ext.generic.model.TableCache.fetchChild(TableCache.java:157)
+	at org.jkiss.dbeaver.ext.generic.model.TableCache.fetchChild(TableCache.java:1)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCStructCache.loadChildren(JDBCStructCache.java:128)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCStructCache.getChildren(JDBCStructCache.java:220)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getAttributes(GenericTable.java:149)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getConstraints(GenericTable.java:173)
+	at org.jkiss.dbeaver.ext.generic.model.ForeignKeysCache.fetchObject(ForeignKeysCache.java:126)
+	at org.jkiss.dbeaver.ext.generic.model.ForeignKeysCache.fetchObject(ForeignKeysCache.java:1)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCCompositeCache.loadObjects(JDBCCompositeCache.java:312)
+	at org.jkiss.dbeaver.model.impl.jdbc.cache.JDBCCompositeCache.getObjects(JDBCCompositeCache.java:112)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getAssociations(GenericTable.java:193)
+	at org.jkiss.dbeaver.model.impl.sql.edit.struct.SQLTableManager.getTableDDL(SQLTableManager.java:182)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCUtils.generateTableDDL(JDBCUtils.java:780)
+	at org.jkiss.dbeaver.ext.generic.model.meta.GenericMetaModel.getTableDDL(GenericMetaModel.java:219)
+	at org.jkiss.dbeaver.ext.generic.model.GenericTable.getObjectDefinitionText(GenericTable.java:288)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLSourceViewer.getSourceText(SQLSourceViewer.java:53)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditorNested$ObjectDocumentProvider$1.run(SQLEditorNested.java:230)
+	at org.jkiss.dbeaver.runtime.TasksJob.run(TasksJob.java:60)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:95)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+2019-03-31 15:50:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 15:51:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 15:52:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 15:53:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 15:54:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 15:55:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 15:56:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 15:57:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 15:58:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 15:59:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 16:00:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 16:01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 16:02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 16:03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 16:09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 16:10:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 16:11:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 16:12:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 16:13:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 16:14:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 16:15:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 16:16:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
