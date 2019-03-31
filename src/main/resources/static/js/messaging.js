@@ -25,10 +25,13 @@ function sendMessage(destination, value) {
 }
 
 function onMessage(m) {
-    console.log(m);
+    console.log({onMessage: m});
+    if (!m.headers) {
+        return;
+    }
 
     if (m.headers.authSuccess === "1") {
-        sendMessage("/ctrl/table/load", {mode: "default"});
+        sendMessage("/ctrl/table/load", {});
         return;
     }
 
@@ -41,6 +44,12 @@ function onMessage(m) {
     if (m.headers.type === "TableLoadResponse") {
         var loadData = JSON.parse(m.body);
         doTableLoad(loadData);
+        return;
+    }
+
+    if (m.headers.type === "Selection") {
+        var s = JSON.parse(m.body);
+        doTableSelect(s);
         return;
     }
 }

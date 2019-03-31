@@ -23,4 +23,5 @@ public class TableLoadResponse implements Serializable {
 
     private String album;
     private List<Row> rows;
+    private List<Selection> sessions;
 }

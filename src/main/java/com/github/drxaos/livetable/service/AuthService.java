@@ -1,5 +1,7 @@
 package com.github.drxaos.livetable.service;
 
+import com.github.drxaos.livetable.controller.model.Selection;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -44,7 +46,8 @@ public class AuthService {
         log.debug("afterAuth " + auth);
         return Map.of(
                 "authSuccess", "1",
-                "place", auth.place
+                "place", auth.place,
+                "uid", auth.uid
         );
     }
 
@@ -66,8 +69,10 @@ public class AuthService {
     }
 
     @Data
+    @AllArgsConstructor
     public static class Auth {
         final String topic, place, secret, uid;
+        Selection selection;
     }
 
     private Auth parseDestination(String topic) {
@@ -80,6 +85,7 @@ public class AuthService {
         String secret = params.get("secret");
         String uid = params.get("uid");
 
-        return new Auth(topic, place, secret, uid);
+        return new Auth(topic, place, secret, uid,
+                new Selection(uid, -1, -1, -1, -1, false));
     }
 }

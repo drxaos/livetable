@@ -21,16 +21,18 @@ public class TableService {
 
     private final TrackRepository trackRepository;
     private final AlbumRepository albumRepository;
+    private final AuthService authService;
 
-    public TableLoadResponse load(String place) {
-        if (!place.startsWith(PLACE_PREFIX)) {
+    public TableLoadResponse load(AuthService.Auth auth) {
+        if (!auth.place.startsWith(PLACE_PREFIX)) {
             throw new IllegalArgumentException("wrong request");
         }
 
-        long albumId = Long.parseLong(place.substring(PLACE_PREFIX.length()));
+        long albumId = Long.parseLong(auth.place.substring(PLACE_PREFIX.length()));
 
         Album album = albumRepository.findById(albumId).orElseGet(() -> new Album(null, "New album"));
         List<Track> tracks = trackRepository.findAllByAlbumOrderByPositionAsc(album);
+        List<AuthService.Auth> sessions = authService.getSessionsByPlace(auth.getPlace());
 
         return new TableLoadResponse(
                 album.getName(),
@@ -39,7 +41,10 @@ public class TableService {
                                 t.getArtist(),
                                 t.getTitle(),
                                 t.getIsrc())
-                        ).collect(Collectors.toList())
+                        ).collect(Collectors.toList()),
+                sessions.stream()
+                        .map(AuthService.Auth::getSelection)
+                        .collect(Collectors.toList())
         );
     }
 

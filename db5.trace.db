@@ -276,3 +276,12 @@ DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
 2019-03-31 16:16:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
 DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 16:46:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 16:47:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]
+2019-03-31 16:48:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-197]

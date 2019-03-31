@@ -1,6 +1,7 @@
 package com.github.drxaos.livetable.config.websocket;
 
 import com.github.drxaos.livetable.service.AuthService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageChannel;
@@ -9,10 +10,11 @@ import org.springframework.messaging.simp.stomp.StompCommand;
 import org.springframework.messaging.simp.stomp.StompHeaderAccessor;
 import org.springframework.messaging.support.ChannelInterceptor;
 
+@Slf4j
 public class SubscribeInterceptor implements ChannelInterceptor {
 
     @Autowired
-    AuthService authService;
+    private AuthService authService;
 
     @Override
     public Message<?> preSend(Message<?> message, MessageChannel channel) {
@@ -33,6 +35,8 @@ public class SubscribeInterceptor implements ChannelInterceptor {
                 var response = authService.afterAuth(headerAccessor);
                 if (response != null) {
                     try {
+                        log.info("auth complete " + response);
+                        Thread.sleep(50); // race condition?
                         new SimpMessagingTemplate(channel).convertAndSend(headerAccessor.getDestination(), new byte[0], response);
                     } catch (Exception e) {
                         e.printStackTrace();
